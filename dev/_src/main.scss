@@ -66,11 +66,15 @@ body.user_eshop {
            width: 32rem;
            height: 3.2rem;
            content: '';
-           display: block;
            background-position: 0 50%;
            background-image: url('https://lecinematographe.ch/_nuxt/leCinematographe-logo_type--white.CrLmPWLL.svg');
            background-repeat: no-repeat;
            background-size: contain;
+           display: none;
+
+           @media (max-width: 990px) {
+            display: block;
+           }
          }
 
         .logo {
@@ -449,3 +453,6 @@ form {
 }
 
 
+.panel.panel-default header .col-md-6 {
+  width: 100%;
+}
