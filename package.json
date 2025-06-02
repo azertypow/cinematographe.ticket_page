@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "npx sass ./src/main.scss ./ticket.css"
+    "dev": "vite dev/",
+    "build": "npx sass ./dev/_src/main.scss ./prod/ticket.css"
   },
   "devDependencies": {
     "sass": "^1.86.3",
