@@ -91,11 +91,20 @@ hr {
 
 a {
   color: inherit;
-  border-bottom: dotted 2px;
+  border-bottom: solid 1px;
 }
 
+.panel.panel-default .panel-body {
+  padding-left: 0;
+  padding-right: 0;
+}
 .panel.panel-default .panel-body .row .col-md-6 .badge + p {
   margin-top: 1rem;
+}
+
+.tab-content > div > div > div {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .nav-tabs {
@@ -108,8 +117,10 @@ a {
 
 .btn-default {
   text-shadow: none;
-  background: white;
   border: none;
+  background: #436aed;
+  color: white;
+  border-radius: 5em;
 }
 
 .input-group {
@@ -208,8 +219,12 @@ input[type=number] {
   top: 1rem;
   right: 2rem;
 }
+.header-menu li + li {
+  margin-left: 2rem;
+}
 .header-menu a {
   color: white;
+  border: none;
 }
 
 .table > thead > tr > th {
@@ -237,6 +252,24 @@ input[type=number] {
   color: white;
   border: none;
   text-shadow: none;
+  border-radius: 2rem;
+  box-shadow: none;
+}
+
+span.input-group-addon {
+  width: auto;
+  color: white;
+  background: #436aed;
+  border: none;
+  border-top-left-radius: 5em;
+  border-bottom-left-radius: 5em;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+input#ticket_key {
+  border: none;
 }
 
 /*# sourceMappingURL=ticket.css.map */

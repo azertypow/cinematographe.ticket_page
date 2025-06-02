@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://lecinematographe.ticketack.com/pass/new -->
+<html lang="fr" ng-app="myApp" class="overthrow-enabled ng-scope" data-lt-installed="true">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">@charset "UTF-8";
+  [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide {
+      display: none !important;
+  }
+
+  ng\:form {
+      display: block;
+  }
+
+  .ng-animate-block-transitions {
+      transition: 0s all !important;
+      -webkit-transition: 0s all !important;
+  }
+
+  .ng-hide-add-active, .ng-hide-remove {
+      display: block !important;
+  }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Le Cinématographe | ticketack.com</title>
+  <link href="https://images.weserv.nl/?url=https%3A%2F%2Flecinematographe.ticketack.com%2Fasset%2Ffetch%2Fimage%2Fappicon%2Flang%2Ffr%3F_v%3D103&amp;output=webp&amp;q=70&amp;fit=outside"
+        rel="apple-touch-icon-precomposed">
+  <link href="https://images.weserv.nl/?url=https%3A%2F%2Flecinematographe.ticketack.com%2Fasset%2Ffetch%2Fimage%2Fappicon%2Flang%2Ffr%3F_v%3D103&amp;output=webp&amp;q=70&amp;fit=outside"
+        rel="icon" sizes="192x192">
+  <link href="https://images.weserv.nl/?url=https%3A%2F%2Flecinematographe.ticketack.com%2Fasset%2Ffetch%2Fimage%2Ffavicon%2Flang%2Ffr%3F_v%3D103&amp;output=webp&amp;q=70&amp;fit=outside"
+        rel="icon">
+  <script src="./tous_les_abonnements_files/bundle.tracing.replay.min.js" crossorigin="anonymous"></script>
+  <script src="./tous_les_abonnements_files/6f16bb8e14da11a60f2f0e8f789f27d7.min.js" crossorigin="anonymous"></script>
+  <script>            Sentry.onLoad(function () {
+      Sentry.init({
+          tracesSampleRate: 0.1, // Capture 10% of the transactions for performance analysis
+          replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+          replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+          integrations: [
+              Sentry.replayIntegration({
+                  maskAllText: false,
+                  maskAllInput: false,
+                  blockAllMedia: false
+              })
+          ],
+          initialScope: {
+              tags: {
+                  lang: globalThis.ticketack.lang,
+                  context: globalThis.ticketack.context || 'undefined',
+                  salepoint_name: globalThis.ticketack.salepoint_name || 'undefined',
+                  cashregister: globalThis.ticketack.cashregister || 'undefined',
+              },
+              user: {
+                  name: globalThis.ticketack.user_name,
+                  roles: globalThis.ticketack.user_roles,
+                  api_key: globalThis.ticketack.api_key,
+              }
+          },
+      });
+  });</script>
+  <script src="./tous_les_abonnements_files/ticketack.min.js"></script>
+  <script src="./tous_les_abonnements_files/jquery.min.js"></script>
+  <script src="./tous_les_abonnements_files/jquery.cookie.min.js"></script>
+  <script src="./tous_les_abonnements_files/underscore-min.js"></script>
+  <script src="./tous_les_abonnements_files/angular.min.js"></script>
+  <script src="./tous_les_abonnements_files/angular-route.min.js"></script>
+  <script src="./tous_les_abonnements_files/angular-locale_fr-ch.js" defer=""></script>
+  <script src="./tous_les_abonnements_files/ui-bootstrap.min.js"></script>
+  <script src="./tous_les_abonnements_files/ui-bootstrap-tpls.min.js"></script>
+  <script src="./tous_les_abonnements_files/mobile-angular-ui.min.js"></script>
+  <script src="./tous_les_abonnements_files/mobile-angular-ui.gestures.min.js"></script>
+  <link rel="stylesheet" href="./tous_les_abonnements_files/mobile-angular-ui-base.min.css">
+  <link rel="stylesheet" href="./tous_les_abonnements_files/mobile-angular-ui-desktop.min.css">
+  <script src="./tous_les_abonnements_files/moment-with-locales.min.js"></script>
+  <script src="./tous_les_abonnements_files/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./tous_les_abonnements_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./tous_les_abonnements_files/bootstrap-theme.min.css">
+  <script src="./tous_les_abonnements_files/bootstrap-select.min.js"></script>
+  <link rel="stylesheet" href="./tous_les_abonnements_files/bootstrap-select.min.css">
+  <script src="./tous_les_abonnements_files/bootstrap-datetimepicker.min.js"></script>
+  <link rel="stylesheet" href="./tous_les_abonnements_files/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="./tous_les_abonnements_files/style.css">
+  <link rel="stylesheet" href="./tous_les_abonnements_files/no-more-tables.css">
+  <script src="./tous_les_abonnements_files/url.min.js"></script>
+  <link rel="stylesheet" href="./tous_les_abonnements_files/ticket-2.css">
+  <script src="./tous_les_abonnements_files/star-rating.min.js"></script>
+  <link rel="stylesheet" href="./tous_les_abonnements_files/star-rating.min.css">
+  <script>    var app = angular.module('myApp', ['mobile-angular-ui', 'ui.bootstrap']);</script>
+  <script src="./tous_les_abonnements_files/ticketack-helpers-min.js"></script>
+  <script>        globalThis.ticketack = {
+      _v: 103,
+      can_print_pdf: true,
+      user_can_overbook: false,
+      sumup_key: "64d6f588-4758-4822-a27f-901b763e92c6",
+      server_load: 'unknown yet',
+      currency: "CHF",
+      lang: "fr",
+      default_lang: "fr",
+      engine_uri: "https:\/\/lecinematographe-engine.ticketack.com",
+      pihyve_uri: "https:\/\/lecinematographe-engine.ticketack.com",
+      api_path: "api",
+      api_key: "73e42db0-12ef-4882-9774-043126f6060a",
+      user_name: "eshop",
+      user_roles: ["eshop"],
+      context: "",
+      salepoint: "928328a0-c8b3-4684-996e-2779c06c1619",
+      salepoint_name: "Eshop",
+      cashregister: "69d469e5-e2d4-4eb3-86ba-0c845d04427b",
+      pass_photo_width: "300",
+      proxy_img_host: "images.weserv.nl",
+      strftime_date_format: "D MMMM YYYY",
+      capacity_warn_level: 10,
+      session_id: "l4q71f495e22mtsa077hvvpvgt",
+      max_tickets_per_screening: 6,
+      max_tickets_in_cart: 12,
+      extra_currencies: [],
+      i18n: {
+          max_ticket_per_screening_reached: "Vous d\u00e9passez la limite de 6 billets par \u00e9v\u00e9nement par commande.",
+          max_items_in_cart_reached: "Vous d\u00e9passez la limite de 12 billets par commande."
+      }
+  };
+  globalThis.TKTLib = globalThis.Ticketack;
+  globalThis.TKTLib
+      .useLanguage(globalThis.ticketack.lang)
+      .setup({
+          'apiKey': globalThis.ticketack.api_key,
+          'engineUri': globalThis.ticketack.engine_uri,
+          'storage': 'localStorage',
+          'eshop': {
+              'uri': "https:\/\/lecinematographe.ticketack.com"
+          }
+      });
+  if ($.cookie('ttck_lang') && $.cookie('ttck_lang') != ticketack.lang) {
+      let url = new Url();
+      if (!url.query['lang']) {
+          url.query.lang = $.cookie('ttck_lang');
+          document.location = url
+      }
+  }
+  jQuery(document).ready(function ($) {
+      var tooltips = $('[rel=tooltip]');
+      if (tooltips.length) {
+          tooltips.tooltip();
+      }
+      moment().format();
+      moment.locale(globalThis.ticketack.lang);
+  });</script>
+</head>
+<body class="user_eshop role_eshop " ng-app="app">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 panel panel-default">
+      <header>
+        <div class="row">
+          <div class="col-md-6"><h1 class="hide">Billetterie</h1><a href="https://lecinematographe.ch/"><img
+                  src="./tous_les_abonnements_files/image.webp" class="logo" alt="logo"></a></div>
+          <div class="col-md-6"><h1 class="hide">Billetterie</h1>
+            <ul class="header-menu pull-right list-inline">
+              <li id="home-link"><a href="https://lecinematographe.ch/"><span
+                      class="glyphicon glyphicon-home"></span></a></li>
+              <li style="border-right:none"><a href="https://lecinematographe.ticketack.com/cart/view"><span
+                      class="glyphicon glyphicon-shopping-cart"></span><span
+                      class="badge badge-notify"></span>&nbsp;<span>Panier &amp; paiement</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section id="content">
+        <script src="./tous_les_abonnements_files/webcam.js"></script>
+        <script src="./tous_les_abonnements_files/webcam(1).js"></script>
+        <h1>Achat d'un abonnement</h1>
+        <p id="buy-before-book"><b>Important&nbsp;:</b> l'achat d'un abonnement doit être finalisé et payé avant que
+          vous ne puissiez l'utiliser pour réserver des séances.</p>
+        <form class="form-horizontal ng-pristine ng-valid" action="https://lecinematographe.ticketack.com/pass/new"
+              method="POST" enctype="multipart/form-data">
+          <fieldset>
+            <div class="row">
+              <div id="pass-list" class="col-md-12">
+                <legend>Choisissez la formule</legend>
+                <div class="panel-group " id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                                 href="https://lecinematographe.ticketack.com/pass/new#item-bon_unique"
+                                                 class="pass_title"> Bon 1 entrée </a> &nbsp;<button
+                              class="btn btn-primary btn-xs pull-right" data-toggle="collapse" data-parent="#accordion"
+                              href="#item-bon_unique"> choisir
+                      </button>
+                      </h4>
+                    </div>
+                    <div id="item-bon_unique" class="panel-collapse collapse ">
+                      <div class="panel-body"><p></p>
+                        <p>Bon unique pour une entrée à utiliser via la billetterie en ligne ou directement à l'entrée
+                          du cinéma. Valable 6 mois.</p>
+                        <p></p><b>Tarifs&nbsp;:</b><input type="hidden" class="required_fields"
+                                                          id="item-bon_unique-required-fields" value=""
+                                                          autocomplete="off"><input type="hidden"
+                                                                                    class="requested_fields"
+                                                                                    id="item-bon_unique-requested-fields"
+                                                                                    value="" autocomplete="off">
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="bon_unique:full"> Plein tarif (CHF 15.00) <a
+                                class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                data-content="&lt;p&gt;Bon unique pour une entrée à faire en ligne ou directement à l&#39;entrée du cinéma. Valable 6 mois.&amp;nbsp;&lt;/p&gt;"
+                                rel="popover" data-placement="bottom" data-html="true" data-trigger="hover"
+                                data-original-title="" title=""><span class="glyphicon glyphicon-info-sign"></span></a></label>
+                        </div>
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="bon_unique:reduce"> Réduit (CHF 12.00) <a
+                                class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                data-content="&lt;p&gt;Bon unique pour une entrée à faire en ligne ou directement à l&#39;entrée du cinéma. Valable 6 mois.&amp;nbsp;&lt;/p&gt;"
+                                rel="popover" data-placement="bottom" data-html="true" data-trigger="hover"
+                                data-original-title="" title=""><span class="glyphicon glyphicon-info-sign"></span></a></label>
+                        </div>
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="bon_unique:support"> Soutien (CHF 20.00) <a
+                                class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                data-content="&lt;p&gt;Bon unique pour une entrée à faire en ligne ou directement à l&#39;entrée du cinéma. Valable 6 mois.&amp;nbsp;&lt;/p&gt;"
+                                rel="popover" data-placement="bottom" data-html="true" data-trigger="hover"
+                                data-original-title="" title=""><span class="glyphicon glyphicon-info-sign"></span></a></label>
+                        </div>
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="bon_unique:suspendu"> Billet suspendu (CHF 15.00) <a
+                                class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                data-content="&lt;p&gt;Sera suspendu en billetterie, pour quiconque aimerait entrer au Cinématographe et n&#39;a pas les moyens. Merci &amp;lt;3&lt;br&gt;C&#39;est l&#39;équipe qui se chargera d&#39;imprimer et de suspendre le specimen, vous pouvez simplement ignorer le billet de votre côté. &lt;br&gt;
+&lt;/p&gt;" rel="popover" data-placement="bottom" data-html="true" data-trigger="hover" data-original-title="" title=""><span
+                                class="glyphicon glyphicon-info-sign"></span></a></label></div>
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="bon_unique:suspendu_support"> Billet suspendu (CHF
+                          20.00) <a class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                    data-content="&lt;p&gt;Sera suspendu en billetterie, pour quiconque aimerait entrer au Cinématographe et n&#39;a pas les moyens. Merci &amp;lt;3&amp;nbsp;&lt;/p&gt;&lt;p&gt;C&#39;est l&#39;équipe qui se chargera d&#39;imprimer et de suspendre le specimen, vous pouvez simplement ignorer le billet de votre côté. &amp;nbsp;&lt;/p&gt;"
+                                    rel="popover" data-placement="bottom" data-html="true" data-trigger="hover"
+                                    data-original-title="" title=""><span class="glyphicon glyphicon-info-sign"></span></a></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                                 href="https://lecinematographe.ticketack.com/pass/new#item-10_entries_card"
+                                                 class="pass_title"> Carte 10 entrées </a> &nbsp;<button
+                              class="btn btn-primary btn-xs pull-right" data-toggle="collapse" data-parent="#accordion"
+                              href="#item-10_entries_card"> choisir
+                      </button>
+                      </h4>
+                    </div>
+                    <div id="item-10_entries_card" class="panel-collapse collapse ">
+                      <div class="panel-body"><p></p>
+                        <p>Carnet 10 entrées à utilise via notre billetterie en ligne ou directement sur place. Maximum
+                          3 places par séance. Valable une année. &nbsp;</p>
+                        <p></p><b>Tarifs&nbsp;:</b><input type="hidden" class="required_fields"
+                                                          id="item-10_entries_card-required-fields" value=""
+                                                          autocomplete="off"><input type="hidden"
+                                                                                    class="requested_fields"
+                                                                                    id="item-10_entries_card-requested-fields"
+                                                                                    value="" autocomplete="off">
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="10_entries_card:full"> Plein (CHF 130.00) <a
+                                class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                data-content="&lt;p&gt;Valable une année. Jusqu&#39;à 3 billets par séance.&amp;nbsp;&lt;/p&gt;"
+                                rel="popover" data-placement="bottom" data-html="true" data-trigger="hover"
+                                data-original-title="" title=""><span class="glyphicon glyphicon-info-sign"></span></a></label>
+                        </div>
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="10_entries_card:reduced"> Réduit (CHF 110.00) <a
+                                class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                data-content="&lt;p&gt;AVS/AI, en formation, étudiantexs, Carte Culture Caritas.&lt;br&gt;Valable une année. Jusqu&#39;à 3 billets par séance. &amp;nbsp;&lt;/p&gt;"
+                                rel="popover" data-placement="bottom" data-html="true" data-trigger="hover"
+                                data-original-title="" title=""><span class="glyphicon glyphicon-info-sign"></span></a></label>
+                        </div>
+                        <div class="radio"><label><input class="choose-pass" type="radio" name="user[pass]"
+                                                         value="10_entries_card:support"> Soutien (CHF 200.00) <a
+                                class="popoverdata" href="https://lecinematographe.ticketack.com/pass/new#"
+                                data-content="&lt;p&gt;Merci beaucoup &amp;lt;3&lt;/p&gt;&lt;p&gt;Valable une année. Jusqu&#39;à 3 billets par séance. &amp;nbsp;&lt;/p&gt;"
+                                rel="popover" data-placement="bottom" data-html="true" data-trigger="hover"
+                                data-original-title="" title=""><span class="glyphicon glyphicon-info-sign"></span></a></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" id="pass-fields">
+                <legend id="pass-fields-legend">Titulaire&nbsp;:</legend>
+                <div id="field-company" class="field form-group col-md-12 "><label for="user_company">Entreprise</label><textarea
+                        name="user[company]" class="form-control" id="user_company" disabled=""></textarea></div>
+                <div id="field-title" class="col-md-12 field form-group "><label
+                        for="user_title">Salutation</label><select name="user[title]" id="user_title"
+                                                                   class="form-control" disabled="">
+                  <option value=""></option>
+                  <option value="n/c">Pas de réponse</option>
+                  <option value="mrs">Madame</option>
+                  <option value="miss">Mademoiselle</option>
+                  <option value="mr">Monsieur</option>
+                  <option value="dr">Docteur</option>
+                </select></div>
+                <div id="field-firstname" class="field col-md-5">
+                  <div class="form-group "><label for="user_firstname">Prénom</label><input name="user[firstname]"
+                                                                                            type="text"
+                                                                                            class="form-control"
+                                                                                            id="user_firstname" value=""
+                                                                                            disabled=""></div>
+                </div>
+                <div id="field-lastname" class="field col-md-5">
+                  <div class="form-group "><label for="user_lastname">Nom</label><input name="user[lastname]"
+                                                                                        type="text" class="form-control"
+                                                                                        id="user_lastname" value=""
+                                                                                        disabled=""></div>
+                </div>
+                <div id="field-zip" class="field col-md-5">
+                  <div class="form-group "><label for="user_zip">Code postal</label><input name="user[zip]" type="text"
+                                                                                           class="form-control"
+                                                                                           id="user_zip" value=""
+                                                                                           disabled=""></div>
+                </div>
+                <div id="field-city" class="field col-md-5">
+                  <div class="form-group "><label for="user_city">Ville</label><input name="user[city]" type="text"
+                                                                                      class="form-control"
+                                                                                      id="user_city" value=""
+                                                                                      disabled=""></div>
+                </div>
+                <div id="field-address" class="field form-group col-md-12 "><label
+                        for="user_address">Adresse</label><textarea name="user[address]" class="form-control"
+                                                                    id="user_address" disabled=""></textarea></div>
+                <div id="field-country" class="form-group field col-md-12 "><label
+                        for="user_country">Pays</label><select name="user[country]" id="user_country"
+                                                               class="form-control" disabled="">
+                  <option value="Inconnu"> Inconnu</option>
+                  <option value="Afghanistan"> Afghanistan</option>
+                  <option value="Albanie"> Albanie</option>
+                  <option value="Algérie"> Algérie</option>
+                  <option value="Samoa Américaines"> Samoa Américaines</option>
+                  <option value="Andorre"> Andorre</option>
+                  <option value="Angola"> Angola</option>
+                  <option value="Anguilla"> Anguilla</option>
+                  <option value="Antarctique"> Antarctique</option>
+                  <option value="Antigua-et-barbuda"> Antigua-et-barbuda</option>
+                  <option value="Argentine"> Argentine</option>
+                  <option value="Arménie"> Arménie</option>
+                  <option value="Aruba"> Aruba</option>
+                  <option value="Australie"> Australie</option>
+                  <option value="Autriche"> Autriche</option>
+                  <option value="AzerbaÏdjan"> AzerbaÏdjan</option>
+                  <option value="Bahamas"> Bahamas</option>
+                  <option value="BahreÏn"> BahreÏn</option>
+                  <option value="Bangladesh"> Bangladesh</option>
+                  <option value="Barbade"> Barbade</option>
+                  <option value="Bélarus"> Bélarus</option>
+                  <option value="Belgique"> Belgique</option>
+                  <option value="Belize"> Belize</option>
+                  <option value="Bénin"> Bénin</option>
+                  <option value="Bermudes"> Bermudes</option>
+                  <option value="Bhoutan"> Bhoutan</option>
+                  <option value="Bolivie, L&#39;État Plurinational De"> Bolivie, L'État Plurinational De</option>
+                  <option value="Bosnie-herzégovine"> Bosnie-herzégovine</option>
+                  <option value="Botswana"> Botswana</option>
+                  <option value="Bouvet, Île"> Bouvet, Île</option>
+                  <option value="Brésil"> Brésil</option>
+                  <option value="Océan Indien, Territoire Britannique De L&#39;"> Océan Indien, Territoire Britannique
+                    De L'
+                  </option>
+                  <option value="Brunéi Darussalam"> Brunéi Darussalam</option>
+                  <option value="Bulgarie"> Bulgarie</option>
+                  <option value="Burkina Faso"> Burkina Faso</option>
+                  <option value="Burundi"> Burundi</option>
+                  <option value="Cambodge"> Cambodge</option>
+                  <option value="Cameroun"> Cameroun</option>
+                  <option value="Canada"> Canada</option>
+                  <option value="Cap-vert"> Cap-vert</option>
+                  <option value="CaÏmanes, Îles"> CaÏmanes, Îles</option>
+                  <option value="Centrafricaine, République"> Centrafricaine, République</option>
+                  <option value="Tchad"> Tchad</option>
+                  <option value="Chili"> Chili</option>
+                  <option value="Chine"> Chine</option>
+                  <option value="Christmas, Île"> Christmas, Île</option>
+                  <option value="Cocos (keeling), Îles"> Cocos (keeling), Îles</option>
+                  <option value="Colombie"> Colombie</option>
+                  <option value="Comores"> Comores</option>
+                  <option value="Congo"> Congo</option>
+                  <option value="Congo, La République Démocratique Du"> Congo, La République Démocratique Du</option>
+                  <option value="Cook, Îles"> Cook, Îles</option>
+                  <option value="Costa Rica"> Costa Rica</option>
+                  <option value="Côte D&#39;ivoire"> Côte D'ivoire</option>
+                  <option value="Croatie"> Croatie</option>
+                  <option value="Cuba"> Cuba</option>
+                  <option value="Chypre"> Chypre</option>
+                  <option value="Tchèque, République"> Tchèque, République</option>
+                  <option value="Danemark"> Danemark</option>
+                  <option value="Djibouti"> Djibouti</option>
+                  <option value="Dominique"> Dominique</option>
+                  <option value="Dominicaine, République"> Dominicaine, République</option>
+                  <option value="équateur"> équateur</option>
+                  <option value="Égypte"> Égypte</option>
+                  <option value="El Salvador"> El Salvador</option>
+                  <option value="Guinée équatoriale"> Guinée équatoriale</option>
+                  <option value="Érythrée"> Érythrée</option>
+                  <option value="Estonie"> Estonie</option>
+                  <option value="Éthiopie"> Éthiopie</option>
+                  <option value="Falkland, Îles (malvinas)"> Falkland, Îles (malvinas)</option>
+                  <option value="Féroé, Îles"> Féroé, Îles</option>
+                  <option value="Fidji"> Fidji</option>
+                  <option value="Finlande"> Finlande</option>
+                  <option value="France"> France</option>
+                  <option value="Guyane FranÇaise"> Guyane FranÇaise</option>
+                  <option value="Polynésie FranÇaise"> Polynésie FranÇaise</option>
+                  <option value="Terres Australes FranÇaises"> Terres Australes FranÇaises</option>
+                  <option value="Gabon"> Gabon</option>
+                  <option value="Gambie"> Gambie</option>
+                  <option value="Géorgie"> Géorgie</option>
+                  <option value="Allemagne"> Allemagne</option>
+                  <option value="Ghana"> Ghana</option>
+                  <option value="Gibraltar"> Gibraltar</option>
+                  <option value="Grèce"> Grèce</option>
+                  <option value="Groenland"> Groenland</option>
+                  <option value="Grenade"> Grenade</option>
+                  <option value="Guadeloupe"> Guadeloupe</option>
+                  <option value="Guam"> Guam</option>
+                  <option value="Guatemala"> Guatemala</option>
+                  <option value="Guinée"> Guinée</option>
+                  <option value="Guinée-bissau"> Guinée-bissau</option>
+                  <option value="Guyana"> Guyana</option>
+                  <option value="HaÏti"> HaÏti</option>
+                  <option value="Heard, Île Et Mcdonald, Îles"> Heard, Île Et Mcdonald, Îles</option>
+                  <option value="Saint-siège (État De La Cité Du Vatican)"> Saint-siège (État De La Cité Du Vatican)
+                  </option>
+                  <option value="Honduras"> Honduras</option>
+                  <option value="Hong-kong"> Hong-kong</option>
+                  <option value="Hongrie"> Hongrie</option>
+                  <option value="Islande"> Islande</option>
+                  <option value="Inde"> Inde</option>
+                  <option value="Indonésie"> Indonésie</option>
+                  <option value="Iran, République Islamique D&#39;"> Iran, République Islamique D'</option>
+                  <option value="Irak"> Irak</option>
+                  <option value="Irlande"> Irlande</option>
+                  <option value="Israël"> Israël</option>
+                  <option value="Italie"> Italie</option>
+                  <option value="JamaÏque"> JamaÏque</option>
+                  <option value="Japon"> Japon</option>
+                  <option value="Jordanie"> Jordanie</option>
+                  <option value="Kazakhstan"> Kazakhstan</option>
+                  <option value="Kenya"> Kenya</option>
+                  <option value="Kiribati"> Kiribati</option>
+                  <option value="Corée, République Populaire Démocratique De"> Corée, République Populaire Démocratique
+                    De
+                  </option>
+                  <option value="Corée, République De"> Corée, République De</option>
+                  <option value="KoweÏt"> KoweÏt</option>
+                  <option value="Kirghizistan"> Kirghizistan</option>
+                  <option value="Lao, République Démocratique Populaire"> Lao, République Démocratique Populaire
+                  </option>
+                  <option value="Lettonie"> Lettonie</option>
+                  <option value="Liban"> Liban</option>
+                  <option value="Lesotho"> Lesotho</option>
+                  <option value="Libéria"> Libéria</option>
+                  <option value="Libyenne, Jamahiriya Arabe"> Libyenne, Jamahiriya Arabe</option>
+                  <option value="Liechtenstein"> Liechtenstein</option>
+                  <option value="Lituanie"> Lituanie</option>
+                  <option value="Luxembourg"> Luxembourg</option>
+                  <option value="Macao"> Macao</option>
+                  <option value="Macédoine, L&#39;ex-république Yougoslave De"> Macédoine, L'ex-république Yougoslave
+                    De
+                  </option>
+                  <option value="Madagascar"> Madagascar</option>
+                  <option value="Malawi"> Malawi</option>
+                  <option value="Malaisie"> Malaisie</option>
+                  <option value="Maldives"> Maldives</option>
+                  <option value="Mali"> Mali</option>
+                  <option value="Malte"> Malte</option>
+                  <option value="Marshall, Îles"> Marshall, Îles</option>
+                  <option value="Martinique"> Martinique</option>
+                  <option value="Mauritanie"> Mauritanie</option>
+                  <option value="Maurice"> Maurice</option>
+                  <option value="Mayotte"> Mayotte</option>
+                  <option value="Mexique"> Mexique</option>
+                  <option value="Micronésie, États Fédérés De"> Micronésie, États Fédérés De</option>
+                  <option value="Moldavie, République De"> Moldavie, République De</option>
+                  <option value="Monaco"> Monaco</option>
+                  <option value="Mongolie"> Mongolie</option>
+                  <option value="Montserrat"> Montserrat</option>
+                  <option value="Maroc"> Maroc</option>
+                  <option value="Mozambique"> Mozambique</option>
+                  <option value="Myanmar"> Myanmar</option>
+                  <option value="Namibie"> Namibie</option>
+                  <option value="Nauru"> Nauru</option>
+                  <option value="Népal"> Népal</option>
+                  <option value="Pays-bas"> Pays-bas</option>
+                  <option value="Antilles Néerlandaises"> Antilles Néerlandaises</option>
+                  <option value="Nouvelle-calédonie"> Nouvelle-calédonie</option>
+                  <option value="Nouvelle-zélande"> Nouvelle-zélande</option>
+                  <option value="Nicaragua"> Nicaragua</option>
+                  <option value="Niger"> Niger</option>
+                  <option value="Nigéria"> Nigéria</option>
+                  <option value="Niué"> Niué</option>
+                  <option value="Norfolk, Île"> Norfolk, Île</option>
+                  <option value="Mariannes Du Nord, Îles"> Mariannes Du Nord, Îles</option>
+                  <option value="Norvège"> Norvège</option>
+                  <option value="Oman"> Oman</option>
+                  <option value="Pakistan"> Pakistan</option>
+                  <option value="Palaos"> Palaos</option>
+                  <option value="Palestinien Occupé, Territoire"> Palestinien Occupé, Territoire</option>
+                  <option value="Panama"> Panama</option>
+                  <option value="Papouasie-nouvelle-guinée"> Papouasie-nouvelle-guinée</option>
+                  <option value="Paraguay"> Paraguay</option>
+                  <option value="Pérou"> Pérou</option>
+                  <option value="Philippines"> Philippines</option>
+                  <option value="Pitcairn"> Pitcairn</option>
+                  <option value="Pologne"> Pologne</option>
+                  <option value="Portugal"> Portugal</option>
+                  <option value="Porto Rico"> Porto Rico</option>
+                  <option value="Qatar"> Qatar</option>
+                  <option value="Réunion"> Réunion</option>
+                  <option value="Roumanie"> Roumanie</option>
+                  <option value="Russie, Fédération De"> Russie, Fédération De</option>
+                  <option value="Rwanda"> Rwanda</option>
+                  <option value="Sainte-hélène, Ascension Et Tristan Da Cunha"> Sainte-hélène, Ascension Et Tristan Da
+                    Cunha
+                  </option>
+                  <option value="Saint-kitts-et-nevis"> Saint-kitts-et-nevis</option>
+                  <option value="Sainte-lucie"> Sainte-lucie</option>
+                  <option value="Saint-pierre-et-miquelon"> Saint-pierre-et-miquelon</option>
+                  <option value="Saint-vincent-et-les Grenadines"> Saint-vincent-et-les Grenadines</option>
+                  <option value="Samoa"> Samoa</option>
+                  <option value="Saint-marin"> Saint-marin</option>
+                  <option value="Sao Tomé-et-principe"> Sao Tomé-et-principe</option>
+                  <option value="Arabie Saoudite"> Arabie Saoudite</option>
+                  <option value="Sénégal"> Sénégal</option>
+                  <option value="Serbie et Monténégro"> Serbie et Monténégro</option>
+                  <option value="Seychelles"> Seychelles</option>
+                  <option value="Sierra Leone"> Sierra Leone</option>
+                  <option value="Singapour"> Singapour</option>
+                  <option value="Slovaquie"> Slovaquie</option>
+                  <option value="Slovénie"> Slovénie</option>
+                  <option value="Salomon, Îles"> Salomon, Îles</option>
+                  <option value="Somalie"> Somalie</option>
+                  <option value="Afrique Du Sud"> Afrique Du Sud</option>
+                  <option value="Géorgie Du Sud Et Les Îles Sandwich Du Sud"> Géorgie Du Sud Et Les Îles Sandwich Du
+                    Sud
+                  </option>
+                  <option value="Espagne"> Espagne</option>
+                  <option value="Sri Lanka"> Sri Lanka</option>
+                  <option value="Soudan"> Soudan</option>
+                  <option value="Suriname"> Suriname</option>
+                  <option value="Svalbard Et Île Jan Mayen"> Svalbard Et Île Jan Mayen</option>
+                  <option value="Swaziland"> Swaziland</option>
+                  <option value="Suède"> Suède</option>
+                  <option selected="" value="Suisse"> Suisse</option>
+                  <option value="Syrienne, République Arabe"> Syrienne, République Arabe</option>
+                  <option value="TaÏwan, Province De Chine"> TaÏwan, Province De Chine</option>
+                  <option value="Tadjikistan"> Tadjikistan</option>
+                  <option value="Tanzanie, République-unie De"> Tanzanie, République-unie De</option>
+                  <option value="ThaÏlande"> ThaÏlande</option>
+                  <option value="Timor-leste"> Timor-leste</option>
+                  <option value="Togo"> Togo</option>
+                  <option value="Tokelau"> Tokelau</option>
+                  <option value="Tonga"> Tonga</option>
+                  <option value="Trinité-et-tobago"> Trinité-et-tobago</option>
+                  <option value="Tunisie"> Tunisie</option>
+                  <option value="Turquie"> Turquie</option>
+                  <option value="Turkménistan"> Turkménistan</option>
+                  <option value="Turks Et CaÏques, Îles"> Turks Et CaÏques, Îles</option>
+                  <option value="Tuvalu"> Tuvalu</option>
+                  <option value="Ouganda"> Ouganda</option>
+                  <option value="Ukraine"> Ukraine</option>
+                  <option value="émirats Arabes Unis"> émirats Arabes Unis</option>
+                  <option value="Royaume-uni"> Royaume-uni</option>
+                  <option value="États-unis"> États-unis</option>
+                  <option value="Îles Mineures éloignées Des États-unis"> Îles Mineures éloignées Des États-unis
+                  </option>
+                  <option value="Uruguay"> Uruguay</option>
+                  <option value="Ouzbékistan"> Ouzbékistan</option>
+                  <option value="Vanuatu"> Vanuatu</option>
+                  <option value="Venezuela, République Bolivarienne Du"> Venezuela, République Bolivarienne Du</option>
+                  <option value="Viêt-Nam"> Viêt-Nam</option>
+                  <option value="Îles Vierges Britanniques"> Îles Vierges Britanniques</option>
+                  <option value="Îles Vierges Des États-unis"> Îles Vierges Des États-unis</option>
+                  <option value="Wallis Et Futuna"> Wallis Et Futuna</option>
+                  <option value="Sahara Occidental"> Sahara Occidental</option>
+                  <option value="Yémen"> Yémen</option>
+                  <option value="Zambie"> Zambie</option>
+                  <option value="Zimbabwe"> Zimbabwe</option>
+                  <option value="Kosovo"> Kosovo</option>
+                  <option value="Serbie"> Serbie</option>
+                  <option value="Zaïre"> Zaïre</option>
+                  <option value="Yougoslavie"> Yougoslavie</option>
+                  <option value="Kosovo"> Kosovo</option>
+                </select></div>
+                <div id="field-phone" class="field col-md-12 form-group "><label
+                        for="user_phone">Téléphone</label><input class="form-control" type="tel"
+                                                                 pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+                                                                 placeholder="Votre numéro, sans espace" value=""
+                                                                 name="user[phone]" id="user_phone" disabled=""></div>
+                <div id="field-cellphone" class="field col-md-12 form-group "><label for="user_cellphone">Téléphone
+                  portable</label><input class="form-control" type="tel"
+                                         pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+                                         placeholder="Votre numéro, sans espace" value="" name="user[cellphone]"
+                                         id="user_cellphone" disabled=""></div>
+                <div id="field-age" class="col-md-12 field form-group "><label for="user_age">Âge</label><select
+                        name="user[age]" id="user_age" class="form-control" disabled="">
+                  <option value=""></option>
+                  <option value="Pas de réponse">Pas de réponse</option>
+                  <option value="&lt; 5">&lt; 5</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                  <option value="32">32</option>
+                  <option value="33">33</option>
+                  <option value="34">34</option>
+                  <option value="35">35</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                  <option value="53">53</option>
+                  <option value="54">54</option>
+                  <option value="55">55</option>
+                  <option value="56">56</option>
+                  <option value="57">57</option>
+                  <option value="58">58</option>
+                  <option value="59">59</option>
+                  <option value="60">60</option>
+                  <option value="61">61</option>
+                  <option value="62">62</option>
+                  <option value="63">63</option>
+                  <option value="64">64</option>
+                  <option value="65">65</option>
+                  <option value="66">66</option>
+                  <option value="67">67</option>
+                  <option value="68">68</option>
+                  <option value="69">69</option>
+                  <option value="70">70</option>
+                  <option value="71">71</option>
+                  <option value="72">72</option>
+                  <option value="73">73</option>
+                  <option value="74">74</option>
+                  <option value="75">75</option>
+                  <option value="76">76</option>
+                  <option value="77">77</option>
+                  <option value="78">78</option>
+                  <option value="79">79</option>
+                  <option value="80">80</option>
+                  <option value="&gt; 80">&gt; 80</option>
+                </select></div>
+                <div id="field-birthdate" class="col-md-12 field form-group "><label for="user_birthdate">Date de
+                  naissance</label><input name="user[birthdate]" type="text" class="form-control datepickerize"
+                                          id="user_birthdate" value="" data-date-format="DD.MM.YYYY" disabled=""></div>
+                <div id="field-sex" class="col-md-12 field form-group "><label for="user_sex">Genre</label><select
+                        name="user[sex]" id="user_sex" class="form-control" disabled="">
+                  <option value=""></option>
+                  <option value="n/c">Pas de réponse</option>
+                  <option value="f">Féminin</option>
+                  <option value="m">Masculin</option>
+                  <option value="o">Autre</option>
+                </select></div>
+                <div id="field-email" class="field col-md-12">
+                  <div class="form-group "><label for="user_email">E-mail</label><input name="user[email]" type="email"
+                                                                                        class="form-control"
+                                                                                        id="user_email" value=""
+                                                                                        disabled="">
+                    <div id="field-disable_email_notifications"><input id="disable_email_notifications" type="checkbox"
+                                                                       value="true" disabled=""><label
+                            for="disable_email_notifications">&nbsp;Désactiver les notifications de réservation</label>
+                    </div>
+                  </div>
+                </div>
+                <div id="field-gift_message"
+                     style="padding: 10px; border: 1px solid #CCC; background: #F0F0F0; margin-left: 0px;"
+                     class="field form-group col-md-12 "><input id="enable_gift_message" type="checkbox" value="true"
+                                                                disabled=""><label for="enable_gift_message">&nbsp;Envoyer
+                  ce billet en cadeau par e-mail au titulaire&nbsp;<span
+                          class="glyphicon glyphicon-gift"></span></label><textarea name="user[gift_message]"
+                                                                                    style="display: none;"
+                                                                                    class="form-control"
+                                                                                    id="user_gift_message"
+                                                                                    placeholder="Vous pouvez indiquer ici un message personnalisé (eg. &quot;Profite bien de ton cadeau !&quot;)"
+                                                                                    disabled=""></textarea></div>
+                <div id="field-photo" class="field">
+                  <div class="row col-md-12 "><label>Photo</label></div>
+                  <div class="form-group col-md-12"><label for="user_photo"><small>Depuis un
+                    fichier</small></label><input type="hidden" name="photo_data_url" id="photo_data_url"
+                                                  disabled=""><input name="photo" type="file" class="form-control"
+                                                                     id="user_photo" accept="image/*" disabled=""></div>
+                  <div class="form-group col-md-9"><label><small>Ou depuis votre webcam</small></label>
+                    <style>    #video {
+                        width: 240px;
+                        height: 240px;
+                    }
+
+                    #canvas {
+                        display: none;
+                    }
+
+                    .camera {
+                        width: 238px;
+                        display: inline-block;
+                        padding: 0;
+                    }
+
+                    #webcamButton {
+                        display: block;
+                        position: relative;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }</style>
+                    <div ng-controller="WebcamCtrl" pass-photo-width="300" class="form-group col-md-12 ng-scope">
+                      <button type="button" ng-click="toggleWebcam()" class="btn btn-default"><span ng-show="showWebcam"
+                                                                                                    class="ng-hide">Stopper la vidéo</span><span
+                              ng-show="!showWebcam" class="">Prendre une photo depuis la caméra</span></button>
+                      <div class="contentarea ng-hide" ng-show="showWebcam">
+                        <div class="camera form-group col-md-12">
+                          <video id="video" style="display: block"> Vidéo non supportée</video>
+                          <button type="button" class="btn btn-success" ng-click="takePicture()" id="webcamButton">
+                            Prendre une photo
+                          </button>
+                        </div>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3"><img src="./tous_les_abonnements_files/image(1).webp" class="img-responsive"
+                                             alt=""></div>
+                  <div class="form-group col-md-12 col-md-offset-1"><small><p>L'image doit être au format jpeg, png,
+                    webp, avif ou gif.</p>
+                    <p>Veuillez fournir une photo (cf. exemple ci-contre). La personne doit être clairement
+                      reconnaissable. Si la photo devait prêter à confusion, l'abonnement sera désactivé et un passage
+                      aux caisses sera nécessaire pour le débloquer.</p></small></div>
+                </div>
+                <div id="field-comment" class="field form-group col-md-12 "><label
+                        for="user_comment">Commentaires</label><textarea name="user[comment]" class="form-control"
+                                                                         id="user_comment" disabled=""></textarea></div>
+                <div class="submit-section">
+                  <div class="col-md-12 text-right"><p id="notice-required" class="small">* ces champs sont requis</p>
+                    <button type="submit" class="btn btn-success btn-block"><i
+                            class="glyphicon glyphicon-shopping-cart"></i> Ajouter au panier
+                    </button>
+                    <a href="https://lecinematographe.ch/" class="btn btn-link btn-default btn-block"><span
+                            class="glyphicon glyphicon-arrow-left"></span> Retour au programme </a></div>
+                </div>
+              </div>
+              <div class="col-md-6" id="pass-amount">
+                <legend id="pass-amount-legend">Quantité&nbsp;:</legend>
+                <div class="input-group col-md-3"><span class="input-group-btn"><button
+                        class="btn btn-default amount-button plusminus-button" type="button">-</button></span><input
+                        type="number" min="1" autocomplete="off" class="form-control" name="user[pass_quantity]"
+                        value="1"><span class="input-group-btn"><button
+                        class="btn btn-default amount-button plusminus-button" type="button">+</button></span></div>
+                <br>
+                <div class="submit-section">
+                  <div class="col-md-12 text-right">
+                    <button type="submit" class="btn btn-success btn-block"><i
+                            class="glyphicon glyphicon-shopping-cart"></i> Ajouter au panier
+                    </button>
+                    <a href="https://lecinematographe.ch/" class="btn btn-link btn-default btn-block"><span
+                            class="glyphicon glyphicon-arrow-left"></span> Retour au programme </a></div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <script src="./tous_les_abonnements_files/exif.min.js"></script>
+        <script src="./tous_les_abonnements_files/fileinput-to-dataurl.js"></script>
+        <script>    function set_fields_disabled(selector, is_disable) {
+            selector = selector || "#pass-fields .field";
+            is_disable = is_disable !== false;
+            ["input", "select", "textarea"].forEach(function (element) {
+                var sel = selector.trim() + " " + element;
+                if ($(sel).length)
+                    $(sel).prop("disabled", is_disable);
+            });
+        }
+
+        function mark_as_required(selector) {
+            $(selector).find('label').first().addClass('required');
+            $(selector).find('select, input, textarea').first().attr('required', 'required');
+        }
+
+        function load_field(id) {
+            var required = $("#item-" + id + "-required-fields").val();
+            var requested = $("#item-" + id + "-requested-fields").val();
+            if (requested && requested.length > 0) {
+                requested = requested.split(",");
+            } else {
+                requested = [];
+            }
+            if (required && required.length > 0) {
+                required = required.split(",");
+            } else {
+                required = [];
+            }
+            $("#pass-fields .field.visible").removeClass("visible col-md-right-offset-1");
+            set_fields_disabled();
+            $("#notice-required").css("display", "none");
+            for (var i in requested) {
+                var option = requested[i];
+                $("#field-" + option).addClass("visible");
+                set_fields_disabled("#field-" + option, false);
+                if (required.indexOf(option) > -1) {
+                    mark_as_required("#field-" + option);
+                }
+            }
+            $(".visible:even").addClass("col-md-right-offset-1");
+            var pass_list = $("#pass-list");
+            if ($(".visible").length > 0) {
+                $("#notice-required").css("display", "block");
+                $("#pass-fields").css("display", "block");
+                $("#pass-fields-legend").css("display", "block");
+                $("#pass-amount").css("display", "none");
+                $("#pass-amount-legend").css("display", "none");
+                if (pass_list.hasClass("col-md-12")) {
+                    pass_list.removeClass("col-md-12");
+                    pass_list.addClass("col-md-6");
+                }
+            } else {
+                $("#pass-fields").css("display", "none");
+                $("#pass-fields-legend").css("display", "none");
+                $("#pass-amount").css("display", "block");
+                $("#pass-amount-legend").css("display", "block");
+                if (pass_list.hasClass("col-md-12")) {
+                    pass_list.removeClass("col-md-12");
+                    pass_list.addClass("col-md-6");
+                }
+            }
+        }
+
+        function get_id_from_radio_input(element) {
+            return element.val() ? element.val().split(":")[0] : undefined;
+        }
+
+        $(function () {
+            if ($('#user_photo').length) {
+                $('#user_photo').fileinput_to_dataurl({
+                    max_width: 300,
+                    data_url_input: 'photo_data_url',
+                    callback: function () {
+                        $('.img-responsive').attr('src', $('#photo_data_url').val());
+                    }
+                });
+                window.addEventListener('webcam-captured', function (e) {
+                    $('#photo_data_url').val(e.detail.dataUrl);
+                    $('.img-responsive').attr('src', e.detail.dataUrl);
+                });
+            }
+            set_fields_disabled();
+            if ($(".alert-danger").length || false) {
+                $(".submit-section").css("display", "block");
+                var id_selected = get_id_from_radio_input($("input[type='radio']:checked"));
+                load_field(id_selected);
+            }
+            $(".choose-pass").on("click", function () {
+                var id = get_id_from_radio_input($(this));
+                load_field(id);
+                var submit_section = $(".submit-section");
+                if (submit_section.css("display") == "none") {
+                    submit_section.css("display", "block")
+                }
+            });
+            if ($('#user_birthdate').length) {
+                jQuery(document).ready(function ($) {
+                    $('.datepickerize').datetimepicker({
+                        locale: moment.locale(),
+                        format: "D MMMM YYYY",
+                        maxDate: moment(),
+                        useCurrent: false
+                    });
+                });
+            }
+            if ($('#enable_gift_message').length) {
+                $('#enable_gift_message').change(function () {
+                    var $input = $('#user_gift_message');
+                    var default_content = $input.data('default');
+                    if ($(this).is(':checked'))
+                        $input.attr('required', true).val(default_content).show();
+                    else
+                        $input.attr('required', false).val("").hide();
+                });
+            }
+        });</script>
+        <script>$(document).ready(function () {
+            $('.popoverdata').popover();
+            var pass = $('.pass_title');
+            if (pass.length == 1) {
+                $(pass[0]).trigger('click');
+                var pricings = $('.choose-pass');
+                if (pricings.length == 1) {
+                    $(pricings[0]).trigger('click');
+                }
+            }
+        });
+        $(".amount-button").on("click", function () {
+            var $button = $(this);
+            var oldValue = parseInt($button.parent().parent().find("input").val());
+            if (isNaN(oldValue))
+                oldValue = 0;
+            if ($button.text() == "+") {
+                var newVal = parseFloat(oldValue) + 1;
+            } else {
+                if (oldValue > 1) {
+                    var newVal = parseFloat(oldValue) - 1;
+                } else {
+                    newVal = 1;
+                }
+            }
+            $button.parent().parent().find("input").val(newVal);
+        });</script>
+      </section>
+      <hr>
+      <footer><p> En cas de question, contactez-nous&nbsp;: <span class="glyphicon glyphicon-earphone"></span> <a
+              href="tel:+41215650487">+41 21 565 04 87</a> | <span class="glyphicon glyphicon-envelope"></span> <a
+              href="mailto:billetterie@lecinematographe.ch">billetterie@lecinematographe.ch</a></p>
+        <p> © 2025 <a href="https://ticketack.com/" target="_blank">ticketack.com</a> | <a
+                href="https://lecinematographe.ch/">Le Cinématographe</a> | <a
+                href="https://lecinematographe.ch/conditions-generales">Conditions générales de vente</a> | <a
+                href="https://lecinematographe.ch/politiques-de-confidentialite">Protection des données</a></p></footer>
+    </div>
+  </div>
+</div>
+<deepl-input-controller translate="no">
+  <template shadowrootmode="open">
+    <link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css">
+    <div dir="ltr" style="visibility: initial !important;">
+      <div class="dl-input-translation-container svelte-95aucy">
+        <div></div>
+      </div>
+    </div>
+  </template>
+</deepl-input-controller>
+</body>
+<script type="module" src="/_src/main.ts"></script>
+</html>
