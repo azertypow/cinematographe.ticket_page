@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev/",
-    "build": "npx sass ./dev/_src/main.scss ./prod/ticket.css"
+    "build": "npx sass ./dev/_src/main.scss ./docs/ticket.css"
   },
   "devDependencies": {
     "sass": "^1.86.3",
