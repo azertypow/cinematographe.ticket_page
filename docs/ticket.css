@@ -335,6 +335,20 @@ label input[type=number] {
   box-shadow: none;
 }
 
+.alert-success {
+    background-image: none !important;
+    background-color: var(--lc-color--pastel--green);
+    color: var(--lc-color--blue-light);
+    border: none;
+    text-shadow: none;
+    border-radius: var(--lc-radius);
+}
+
+.input.form-control {
+    border: none;
+    height: auto;
+}
+
 .alert-danger {
   background-image: none !important;
   background-color: var(--lc-color--orange);
