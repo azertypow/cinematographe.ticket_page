@@ -359,7 +359,7 @@ label input[type=number] {
   border-radius: var(--lc-radius);
 }
 
-.input.form-control {
+input.form-control {
   border: none;
   height: auto;
 }
