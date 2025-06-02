@@ -15,8 +15,8 @@
   --lc-color--pastel--blue: #ACDEED;
   --lc-header-height: 6rem;
   --lc-header-radius: 3rem;
-  --lc-radius: .25rem;
-  --lc-radius--min: .15rem;
+  --lc-radius: 2rem;
+  --lc-radius--min: 1rem;
   --lc-max-width--sm: 25rem;
   --lc-max-width--reg: 30rem;
   --lc-max-width--lg: 35rem;
@@ -47,8 +47,10 @@ body.user_eshop {
   border: none;
 }
 .panel header {
+  max-width: 150rem;
+  left: 50%;
+  transform: translate(-50%, 0);
   top: 2rem;
-  left: 0;
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -68,16 +70,32 @@ body.user_eshop {
   display: flex;
   justify-content: space-between;
 }
-.panel header .col-md-6 > a:before {
-  position: fixed;
+.panel header .col-md-6 > a {
+  position: absolute;
   top: 1.5rem;
   left: 2rem;
+  display: flex;
+  box-shadow: none;
+  border: none;
+}
+.panel header .col-md-6 > a:before {
   width: 3.2rem;
   height: 3.2rem;
+  background-position: 50% 50%;
   content: "";
   color: white;
   display: block;
   background-image: url("https://lecinematographe.ch/_nuxt/leCinematographe-icon.BcFGTGrJ.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.panel header .col-md-6 > a:after {
+  width: 32rem;
+  height: 3.2rem;
+  content: "";
+  display: block;
+  background-position: 0 50%;
+  background-image: url("https://lecinematographe.ch/_nuxt/leCinematographe-logo_type--white.CrLmPWLL.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -102,25 +120,12 @@ a {
   margin-top: 1rem;
 }
 
-.tab-content > div > div > div {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .nav-tabs {
   border-bottom: dotted 2px;
 }
 
 .user_eshop.role_eshop {
   padding-top: 8rem;
-}
-
-.btn-default {
-  text-shadow: none;
-  border: none;
-  background: #436aed;
-  color: white;
-  border-radius: 5em;
 }
 
 .input-group {
@@ -132,7 +137,30 @@ a {
   width: auto;
 }
 
-input[type=number] {
+label {
+  position: relative;
+}
+.radio label {
+  padding-left: 4rem;
+}
+.radio label [type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  appearance: none;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+.radio label [type=radio]:checked {
+  background-color: var(--lc-color--blue-light);
+}
+label input[type=number] {
   all: unset;
   display: block;
   background: white;
@@ -143,7 +171,7 @@ input[type=number] {
 .poster_wrapper img {
   border: none;
   padding: 0;
-  border-radius: 1rem;
+  border-radius: var(--lc-radius--min);
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
@@ -164,17 +192,39 @@ input[type=number] {
   color: white;
 }
 
-.btn-success {
-  all: unset;
-  background-image: none;
-  background-color: #436aed;
+.btn {
+  font-size: 2rem;
+  padding: 0.6rem 1.3rem;
+  line-height: 1em;
+  box-shadow: none;
+  border-radius: var(--lc-radius);
+}
+
+.btn-default {
+  text-shadow: none;
   border: none;
+  background: var(--lc-color--blue-light);
+  color: white;
+}
+.btn-default:hover {
+  background: white none;
+  text-decoration: none;
+}
+
+.btn-success {
+  background-image: none;
+  background-color: var(--lc-color--blue-light);
+  border: none;
+  text-shadow: none;
+}
+.btn-success:hover {
+  background-color: var(--lc-color--pastel--green);
+  color: var(--lc-color--blue);
 }
 
 .btn-primary {
-  all: unset;
   background-image: none;
-  background-color: #436aed;
+  background-color: var(--lc-color--blue-light);
   border: none;
   color: white;
   display: block;
@@ -182,6 +232,22 @@ input[type=number] {
   padding: 1rem;
   border-radius: 10rem;
   text-align: center;
+}
+.btn-primary:hover {
+  background-color: var(--lc-color--blue);
+  color: white;
+  box-shadow: 0 0 5rem 0 var(--lc-color--blue);
+}
+
+.btn-danger {
+  background-image: none;
+  background-color: var(--lc-color--orange);
+}
+
+.btn-link {
+  background: none;
+  border: solid 1px;
+  border-color: currentColor;
 }
 
 .thumbnail {
@@ -210,7 +276,7 @@ input[type=number] {
 }
 
 .text-primary, .text-info {
-  color: #436aed;
+  color: var(--lc-color--blue-light);
 }
 
 .header-menu {
@@ -246,23 +312,51 @@ input[type=number] {
   border-top-width: 1px;
 }
 
+.table-hover > tbody > tr:hover {
+  background: inherit;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background: transparent;
+  color: white;
+}
+
+.cart-item a {
+  color: inherit;
+}
+
 .alert-info {
   background-image: none !important;
-  background-color: #436aed;
+  background-color: var(--lc-color--blue-light);
   color: white;
   border: none;
   text-shadow: none;
-  border-radius: 2rem;
+  border-radius: var(--lc-radius);
   box-shadow: none;
+}
+
+.alert-danger {
+  background-image: none !important;
+  background-color: var(--lc-color--orange);
+  color: white;
+  border: none;
+  text-shadow: none;
+  border-radius: var(--lc-radius);
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+  opacity: 1;
+  border-bottom: none;
 }
 
 span.input-group-addon {
   width: auto;
   color: white;
-  background: #436aed;
+  background: var(--lc-color--blue-light);
   border: none;
-  border-top-left-radius: 5em;
-  border-bottom-left-radius: 5em;
+  border-top-left-radius: var(--lc-radius);
+  border-bottom-left-radius: var(--lc-radius);
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -270,6 +364,62 @@ span.input-group-addon {
 
 input#ticket_key {
   border: none;
+}
+
+legend {
+  color: white;
+}
+
+form {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.panel-heading {
+  background-image: none;
+  border-radius: var(--lc-radius);
+}
+.panel-heading a {
+  text-decoration: none;
+  border: none;
+}
+.panel-heading .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top: none;
+}
+
+.tab-pane.movie_details_panel .col-sm-4 > a:first-child {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#book .panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#buy .text-right {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#content .text-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+#content .text-right h3 {
+  width: 100%;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=ticket.css.map */
